@@ -1,13 +1,330 @@
-body {
+html,body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Verdana, sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.398);
+}
+
+
+
+
+.navbar-R {
+  float: right;
+
+  margin-right: 10px;
+}
+
+
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  padding: 10px;
+  margin: 13px;
+
+  
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.navbar a:hover{
+
+ background: #ddd;
+
+}
+
+.navbar a > span{
+
+  font-weight: 200;
+
+}
+
+.header {
+  position: relative;
+  margin-bottom: 50px;
+}
+.header-title {
+  position: absolute;
+  bottom: 55%;
+  margin-left: 39%;
+  color: white;
+
+  font-size: 20px;
+}
+.header-title b {
+  background-color: rgba(0, 0, 0, 0.793);
+  padding: 9px;
+}
+
+.p-cards {
+ 
+
+  position: relative;
+}
+
+.p-images {
+  
+   position: relative;
+}
+
+.p-images img{
+
+ width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+
+
+
+.projects-grid{
+
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin:20px 0;
+ padding: 0 16px; 
+gap: 20px;
+
+}
+
+.label{
+
+ margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  padding: 8px 16px;
+}
+.p-title{
+
+font-size: 24px;
+margin: 10px 16px 20px;
+padding-bottom: 16px;
+ border-bottom: 1px solid #f1f1f1;
+ font-weight: 400;
+}
+
+.A-title{
+  padding-top: 35px;
+font-size: 24px;
+margin:  16px 20px;
+padding-bottom: 16px;
+border-bottom: 1px solid #f1f1f1;
+ font-weight: 400;
+}
+
+.about-text{
+margin:  16px 20px;
+padding-bottom: 20px;
+font-size: 16px;
+}
+
+.team-container{
+
+margin: 10px 16px 20px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin:20px 0;
+padding: 0 16px; 
+gap: 15px;
+
+}
+
+.A-section{
+
+position: relative;
+  margin-bottom: 30px;
+  
+}
+
+
+.A-section h3{
+
+margin: 15px 0 5px;
+font-size: 20px;
+font-weight: normal;
+
+}
+
+.A-images{
+
+ position: relative;
+
+}
+.role {
+  color: #777;
+  
+  font-size: 15px; 
+}
+
+
+
+.team-description {
+  margin: 0 0 15px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+.A-images img{
+
+ width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(80%);
+   
+
+}
+
+.contact-btn{
+   background: #f1f1f1;
+    border: none;
+    font-size: 13px;
+  cursor: pointer;
+   transition: 0.3s;
+   margin: 10px;
+  padding: 8px 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.contact-btn:hover {
+  background: #ddd;
+}
+
+.C-title{
+
+
+font-size: 24px;
+margin: 10px 16px 20px;
+padding-bottom: 16px;
+ border-bottom: 1px solid #f1f1f1;
+ font-weight: 400;
+
+}
+.C-section p{
+
+font-size: 15px;
+margin: 10px 16px 20px;
+
+}
+
+.C-form input{
+width: 100%;
+border-color: 1px solid #f1f1f1;
+ padding: 12px;
+ margin: 8px 0 16px;
+box-sizing: border-box;
+  font-size: 15px;
+
+}
+.C-form {
+  padding: 0 16px;
+}
+.C-form button{
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 16px 0;
+  padding: 12px 24px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+
+ 
+}
+
+.C-form button:hover {
+  
+    background: grey;
+}
+
+
+
+.image-container {
+  margin: 10px 16px 20px;
+  width: calc(100% - 32px); 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.footer{
+padding: 16px 0;
+  margin-top: 15px;
+  background-color: black;
+}
+.footer p{
+
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  
+}
+.footer a {
+  color: white;
+ 
+}
+
+.footer a:hover {
+  color: green;
+}
+
+@media(max-width : 430px) {
+  
+.navbar a{
+
+  padding: 8px;
+  margin: 5px;
+    font-size: 14px;
+}
+
+.header-title {
+    margin-left: 20%;
+    font-size: 16px;
+ 
+  
+  }
+
+  .projects-grid,
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .p-title, .A-title, .C-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar a {
+    font-size: 13px;
+    padding: 5px;
+  }
+  
+  .header-title {
+    font-size: 14px;
+  }
 }
